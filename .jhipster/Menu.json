@@ -1,0 +1,32 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "menu_name",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "state_name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "parent_id",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "active_flag",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20170420175522",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "menu",
+    "pagination": "no"
+}
