@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span data-translate="thepellestoreApp.menu.detail.title">Menu</span> {{vm.menu.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="thepellestoreApp.menu.menu_name">Menu Name</span></dt>
+        <dd>
+            <span>{{vm.menu.menu_name}}</span>
+        </dd>
+        <dt><span data-translate="thepellestoreApp.menu.description">Description</span></dt>
+        <dd>
+            <span>{{vm.menu.description}}</span>
+        </dd>
+        <dt><span data-translate="thepellestoreApp.menu.state_name">State Name</span></dt>
+        <dd>
+            <span>{{vm.menu.state_name}}</span>
+        </dd>
+        <dt><span data-translate="thepellestoreApp.menu.parent_id">Parent Id</span></dt>
+        <dd>
+            <span>{{vm.menu.parent_id}}</span>
+        </dd>
+        <dt><span data-translate="thepellestoreApp.menu.active_flag">Active Flag</span></dt>
+        <dd>
+            <span>{{vm.menu.active_flag}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="menu-detail.edit({id:vm.menu.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

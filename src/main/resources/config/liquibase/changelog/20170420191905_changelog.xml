@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+   <changeSet author="amankishan (generated)" id="1492715957345-1">
+      <dropColumn columnName="active_flag" tableName="menu"/>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1492715957345-2">
+      <dropColumn columnName="description" tableName="menu"/>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1492715957345-3">
+      <dropColumn columnName="menu_id" tableName="menu"/>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1492715957345-4">
+      <dropColumn columnName="menu_name" tableName="menu"/>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1492715957345-5">
+      <dropColumn columnName="parent_id" tableName="menu"/>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1492715957345-6">
+      <dropColumn columnName="state_name" tableName="menu"/>
+   </changeSet>
+</databaseChangeLog>

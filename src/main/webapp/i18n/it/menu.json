@@ -1,0 +1,26 @@
+{
+    "thepellestoreApp": {
+        "menu" : {
+            "home": {
+                "title": "Menus",
+                "createLabel": "Genera un nuovo Menu",
+                "createOrEditLabel": "Genera o modifica un Menu",
+                "search": "Cerca Menu"
+            },
+            "created": "&Egrave; stato generato un nuovo Menu con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Menu identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Menu con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Menu {{ id }}?"
+            },
+            "detail": {
+                "title": "Menu"
+            },
+            "menu_name": "Menu Name",
+            "description": "Description",
+            "state_name": "State Name",
+            "parent_id": "Parent Id",
+            "active_flag": "Active Flag"
+        }
+    }
+}

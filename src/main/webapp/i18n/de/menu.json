@@ -1,0 +1,26 @@
+{
+    "thepellestoreApp": {
+        "menu" : {
+            "home": {
+                "title": "Menus",
+                "createLabel": "Menu erstellen",
+                "createOrEditLabel": "Menu erstellen oder bearbeiten",
+                "search": "Suche nach Menu"
+            },
+            "created": "Menu erstellt mit ID {{ param }}",
+            "updated": "Menu aktualisiert mit ID {{ param }}",
+            "deleted": "Menu gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Menu {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Menu"
+            },
+            "menu_name": "Menu Name",
+            "description": "Description",
+            "state_name": "State Name",
+            "parent_id": "Parent Id",
+            "active_flag": "Active Flag"
+        }
+    }
+}
