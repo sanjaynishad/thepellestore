@@ -1,0 +1,23 @@
+{
+    "thepellestoreApp": {
+        "province" : {
+            "home": {
+                "title": "Provinces",
+                "createLabel": "Province erstellen",
+                "createOrEditLabel": "Province erstellen oder bearbeiten",
+                "search": "Suche nach Province"
+            },
+            "created": "Province erstellt mit ID {{ param }}",
+            "updated": "Province aktualisiert mit ID {{ param }}",
+            "deleted": "Province gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Province {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Province"
+            },
+            "province_name": "Province Name",
+            "country": "Country"
+        }
+    }
+}

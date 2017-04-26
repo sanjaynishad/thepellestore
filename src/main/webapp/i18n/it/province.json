@@ -1,0 +1,23 @@
+{
+    "thepellestoreApp": {
+        "province" : {
+            "home": {
+                "title": "Provinces",
+                "createLabel": "Genera un nuovo Province",
+                "createOrEditLabel": "Genera o modifica un Province",
+                "search": "Cerca Province"
+            },
+            "created": "&Egrave; stato generato un nuovo Province con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Province identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Province con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Province {{ id }}?"
+            },
+            "detail": {
+                "title": "Province"
+            },
+            "province_name": "Province Name",
+            "country": "Country"
+        }
+    }
+}

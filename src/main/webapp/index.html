@@ -7,31 +7,121 @@
     <meta name="description" content="">
     <meta name="google" value="notranslate">
     <meta name="viewport" content="width=device-width">
+    
+    <!--  added by aman-->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+     <link href="theme-resources//images/catalog/bt_leather/Leather_Favicon.jpg" rel="icon">
+  
+  <link href="theme-resources/javascript/bossthemes/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+  
+  <link href="theme-resources/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="theme-resources/javascript/bossthemes/video/video.css" rel="stylesheet" type="text/css">
+  
+  <link href="theme-resources/css/stylesheet.css" rel="stylesheet">
+  <link href="theme-resources/css/boss_megamenu.css" rel="stylesheet" type="text/css">
+  <link href="theme-resources/css/bt_stylesheet.css" rel="stylesheet" type="text/css">
+  <link href="theme-resources/css/responsive.css" rel="stylesheet" type="text/css"><!--[if IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+<![endif]-->
+  <link href="theme-resources/css/cs.animate.css" rel="stylesheet" type="text/css">
+  
+  <link href="theme-resources/css/bootstrap-select.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link href="theme-resources/css/boss_revolutionslider/css/settings.css" media="screen" rel="stylesheet" type="text/css">
+  
+  <script src="theme-resources/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript">
+  </script>
+  <script src="theme-resources/javascript/bossthemes/bootstrap/js/bootstrap.min.js" type="text/javascript">
+  </script>
+  
+  <script src="theme-resources/javascript/bossthemes/common.js" type="text/javascript">
+  </script>
+  <script src="theme-resources/javascript/bossthemes/getwidthbrowser.js" type="text/javascript">
+  </script>
+  <script src="theme-resources/javascript/bossthemes/cs.bossthemes.js" type="text/javascript">
+  </script>
+  <script src="theme-resources/javascript/bossthemes/carouFredSel-6.2.0.js" type="text/javascript">
+  </script>
+  <script src="theme-resources/javascript/bossthemes/tabs.js" type="text/javascript">
+  </script>
+  <script src="theme-resources/javascript/bossthemes/jquery.tools.min.js" type="text/javascript">
+  </script>
+  <script src="theme-resources/javascript/bossthemes/jquery.revolution.min.js" type="text/javascript">
+  </script>
+  <script src="theme-resources/javascript/bossthemes/jquery.appear.js" type="text/javascript">
+  </script>
+  <script src="theme-resources/javascript/bossthemes/jquery.smoothscroll.js" type="text/javascript">
+  </script>
+  <script src="theme-resources/javascript/bossthemes/jquery.DEPreLoad.js" type="text/javascript">
+  </script>
+  <script src="theme-resources/javascript/bossthemes/bootstrap-select.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+  <!--
+  $(document).ready(function() {
+  "use strict";
+    if(!isMobile.any()){
+        $('#bt_container').fullpage({
+            scrollingSpeed: 1200,
+            responsive: 900,
+            scrollBar: true,
+            css3: true
+        });
+    }
+  });
+  //-->
+  </script>
+  <script src="theme-resources/javascript/bossthemes/jquery.fullPage.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+  <!--
+  $(document).ready(function() {
+  "use strict";
+    var loader = $("body").DEPreLoad({
+        OnStep: function(percent) {
+            $("#depreload .cs_perc").text(percent + "%");
+        },
+        OnComplete: function() {
+            setTimeout(function(){
+                $("#depreload").css('display','none');
+            }, 200);
+        }
+    });
+  });
+  //-->
+  </script>
+    <!-- end aman added files -->
+    
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css content/css/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"> -->
     <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css">
     <!-- endinject -->
     <!-- endbuild -->
     <!-- build:css content/css/main.css -->
-    <link rel="stylesheet" href="content/css/main.css">
+    <!-- <link rel="stylesheet" href="content/css/main.css"> -->
     <!-- endbuild -->
 </head>
-<body ng-app="thepellestoreApp" ng-strict-di>
+<body ng-app="thepellestoreApp" class="common-home bt-scrollpage" ng-strict-di>
     <!--[if lt IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <page-ribbon></page-ribbon>
+    <div class="bt-scrollpage" id="bt_container">
     <div ui-view="navbar" ng-cloak></div>
     <div class="container">
         <div class="well" ui-view="content">
             <!-- Angular views -->
         </div>
-
-        <div class="footer" ng-cloak>
-            <p data-translate="footer">This is your footer</p>
-        </div>
+	</div>
+       <!--  <div class="footer" ng-cloak> -->
+            <!-- <p data-translate="footer">This is your footer</p> -->
+            <div ui-view="footer" ng-cloak></div>
+       <!--  </div> -->
     </div>
 
     <!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
@@ -89,9 +179,17 @@
     <script src="app/services/auth/account.service.js"></script>
     <script src="app/layouts/navbar/navbar.controller.js"></script>
     <script src="app/layouts/navbar/active-menu.directive.js"></script>
+    <script src="app/layouts/footer/footer.controller.js"></script>
     <script src="app/layouts/error/error.state.js"></script>
     <script src="app/home/home.state.js"></script>
     <script src="app/home/home.controller.js"></script>
+    <script src="app/entities/province/province-dialog.controller.js"></script>
+    <script src="app/entities/province/province-detail.controller.js"></script>
+    <script src="app/entities/province/province-delete-dialog.controller.js"></script>
+    <script src="app/entities/province/province.state.js"></script>
+    <script src="app/entities/province/province.service.js"></script>
+    <script src="app/entities/province/province.search.service.js"></script>
+    <script src="app/entities/province/province.controller.js"></script>
     <script src="app/entities/menu/menu-dialog.controller.js"></script>
     <script src="app/entities/menu/menu-detail.controller.js"></script>
     <script src="app/entities/menu/menu-delete-dialog.controller.js"></script>
@@ -100,6 +198,13 @@
     <script src="app/entities/menu/menu.search.service.js"></script>
     <script src="app/entities/menu/menu.controller.js"></script>
     <script src="app/entities/entity.state.js"></script>
+    <script src="app/entities/country/country-dialog.controller.js"></script>
+    <script src="app/entities/country/country-detail.controller.js"></script>
+    <script src="app/entities/country/country-delete-dialog.controller.js"></script>
+    <script src="app/entities/country/country.state.js"></script>
+    <script src="app/entities/country/country.service.js"></script>
+    <script src="app/entities/country/country.search.service.js"></script>
+    <script src="app/entities/country/country.controller.js"></script>
     <script src="app/components/util/truncate-words.filter.js"></script>
     <script src="app/components/util/truncate-characters.filter.js"></script>
     <script src="app/components/util/sort-by.directive.js"></script>
@@ -180,6 +285,9 @@
     <script src="app/account/account.state.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
-
+    
+    <!--footer js   -->
+     <script src="app/layouts/footer/footer.controller.js"></script>
+    
 </body>
 </html>

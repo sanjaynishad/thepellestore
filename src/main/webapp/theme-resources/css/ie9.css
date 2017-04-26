@@ -1,0 +1,7 @@
+.bt-product-grid .image .button-group  button, .product-grid .button-group button{
+	width: 24%;
+	float: none;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: -3px;
+}
