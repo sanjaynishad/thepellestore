@@ -26,9 +26,12 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://localhost:3306/thepellestore?useUnicode=true&characterEncoding=utf8&useSSL=false
-        username: root
-        password: admin
+        #url: jdbc:mysql://localhost:3306/thepellestore?useUnicode=true&characterEncoding=utf8&useSSL=false
+        #username: root
+        #password: admin
+        url: jdbc:mysql://108.161.134.187:3306/thepelle_store?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: thepellestore
+        password: web123abc123
         hikari:
             data-source-properties:
                 cachePrepStmts: true

@@ -224,6 +224,11 @@
             <artifactId>cache-api</artifactId>
         </dependency>
         <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
@@ -636,11 +641,16 @@
                 <configuration>
                     <changeLogFile>src/main/resources/config/liquibase/master.xml</changeLogFile>
                     <diffChangeLogFile>src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
-                    <driver>com.mysql.jdbc.Driver</driver>
+                    <!--   <driver>com.mysql.jdbc.Driver</driver>
                     <url>jdbc:mysql://localhost:3306/thepellestore</url>
                     <defaultSchemaName>thepellestore</defaultSchemaName>
                     <username>root</username>
-                    <password>admin</password>
+                    <password>admin</password> -->
+                    <driver>com.mysql.jdbc.Driver</driver>
+                    <url>jdbc:mysql://108.161.134.187:3306/thepelle_store</url>
+                    <defaultSchemaName>thepelle_store</defaultSchemaName>
+                    <username>thepellestore</username>
+                    <password>web123abc123</password>
                     <referenceUrl>hibernate:spring:com.java.pellestore.domain?dialect=org.hibernate.dialect.MySQL5InnoDBDialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                     <verbose>true</verbose>
                     <logging>debug</logging>

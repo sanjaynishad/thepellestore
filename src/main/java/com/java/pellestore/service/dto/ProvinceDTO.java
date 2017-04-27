@@ -10,7 +10,7 @@ import java.util.Objects;
 /**
  * A DTO for the Province entity.
  */
-public class ProvinceDTO implements Serializable {
+public class ProvinceDTO extends AbstractAuditingDTO implements Serializable {
 
     private Long id;
 

@@ -28,5 +28,6 @@
     "dto": "mapstruct",
     "service": "serviceImpl",
     "entityTableName": "menu",
-    "pagination": "no"
+    "pagination": "no",
+    "enableEntityAudit": true
 }

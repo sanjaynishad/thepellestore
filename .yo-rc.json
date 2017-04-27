@@ -36,5 +36,8 @@
       "de",
       "it"
     ]
+  },
+  "generator-jhipster-entity-audit": {
+    "auditFramework": "custom"
   }
 }

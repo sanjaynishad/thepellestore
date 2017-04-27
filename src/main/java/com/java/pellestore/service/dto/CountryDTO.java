@@ -8,7 +8,7 @@ import java.util.Objects;
 /**
  * A DTO for the Country entity.
  */
-public class CountryDTO implements Serializable {
+public class CountryDTO extends AbstractAuditingDTO implements Serializable {
 
     private Long id;
 
