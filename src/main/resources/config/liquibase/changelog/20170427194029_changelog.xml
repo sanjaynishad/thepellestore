@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+   <changeSet author="amankishan (generated)" id="1493322155155-1">
+      <createTable tableName="jhi_entity_audit_event">
+         <column autoIncrement="true" name="id" type="BIGINT">
+            <constraints primaryKey="true" primaryKeyName="jhi_entity_audit_eventPK"/>
+         </column>
+         <column name="action" type="VARCHAR(20)">
+            <constraints nullable="false"/>
+         </column>
+         <column name="commit_version" type="INT"/>
+         <column name="entity_id" type="BIGINT">
+            <constraints nullable="false"/>
+         </column>
+         <column name="entity_type" type="VARCHAR(255)">
+            <constraints nullable="false"/>
+         </column>
+         <column name="entity_value" type="LONGTEXT"/>
+         <column name="modified_by" type="VARCHAR(100)"/>
+         <column name="modified_date" type="TINYBLOB">
+            <constraints nullable="false"/>
+         </column>
+      </createTable>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-2">
+      <addColumn tableName="country">
+         <column name="created_by" type="varchar(50)">
+            <constraints nullable="false"/>
+         </column>
+      </addColumn>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-3">
+      <addColumn tableName="menu">
+         <column name="created_by" type="varchar(50)">
+            <constraints nullable="false"/>
+         </column>
+      </addColumn>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-4">
+      <addColumn tableName="province">
+         <column name="created_by" type="varchar(50)">
+            <constraints nullable="false"/>
+         </column>
+      </addColumn>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-5">
+      <addColumn tableName="country">
+         <column name="created_date" type="tinyblob">
+            <constraints nullable="false"/>
+         </column>
+      </addColumn>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-6">
+      <addColumn tableName="menu">
+         <column name="created_date" type="tinyblob">
+            <constraints nullable="false"/>
+         </column>
+      </addColumn>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-7">
+      <addColumn tableName="province">
+         <column name="created_date" type="tinyblob">
+            <constraints nullable="false"/>
+         </column>
+      </addColumn>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-8">
+      <addColumn tableName="country">
+         <column name="last_modified_by" type="varchar(50)"/>
+      </addColumn>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-9">
+      <addColumn tableName="menu">
+         <column name="last_modified_by" type="varchar(50)"/>
+      </addColumn>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-10">
+      <addColumn tableName="province">
+         <column name="last_modified_by" type="varchar(50)"/>
+      </addColumn>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-11">
+      <addColumn tableName="country">
+         <column name="last_modified_date" type="tinyblob"/>
+      </addColumn>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-12">
+      <addColumn tableName="menu">
+         <column name="last_modified_date" type="tinyblob"/>
+      </addColumn>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-13">
+      <addColumn tableName="province">
+         <column name="last_modified_date" type="tinyblob"/>
+      </addColumn>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-14">
+      <addForeignKeyConstraint baseColumnNames="user_id"
+                               baseTableName="jhi_user_authority"
+                               constraintName="FK290okww5jujghp4el5i7mgwu0"
+                               deferrable="false"
+                               initiallyDeferred="false"
+                               referencedColumnNames="id"
+                               referencedTableName="jhi_user"/>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-15">
+      <addForeignKeyConstraint baseColumnNames="event_id"
+                               baseTableName="jhi_persistent_audit_evt_data"
+                               constraintName="FK2ehnyx2si4tjd2nt4q7y40v8m"
+                               deferrable="false"
+                               initiallyDeferred="false"
+                               referencedColumnNames="event_id"
+                               referencedTableName="jhi_persistent_audit_event"/>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-16">
+      <addForeignKeyConstraint baseColumnNames="authority_name"
+                               baseTableName="jhi_user_authority"
+                               constraintName="FK4psxl0jtx6nr7rhqbynr6itoc"
+                               deferrable="false"
+                               initiallyDeferred="false"
+                               referencedColumnNames="name"
+                               referencedTableName="jhi_authority"/>
+   </changeSet>
+   <changeSet author="amankishan (generated)" id="1493322155155-17">
+      <addForeignKeyConstraint baseColumnNames="country_id"
+                               baseTableName="province"
+                               constraintName="FKipakwfceswwc0lb3esew9hqqv"
+                               deferrable="false"
+                               initiallyDeferred="false"
+                               referencedColumnNames="id"
+                               referencedTableName="country"/>
+   </changeSet>
+</databaseChangeLog>
